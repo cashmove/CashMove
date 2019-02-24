@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		234528ECADBB4F5A6DC7E14C /* Pods_CashMove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F7EA5CE48A75273D85744F /* Pods_CashMove.framework */; };
 		B7AC0BA7222282EA00604360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC0BA6222282EA00604360 /* AppDelegate.swift */; };
-		B7AC0BA9222282EA00604360 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC0BA8222282EA00604360 /* FirstViewController.swift */; };
-		B7AC0BAB222282EA00604360 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC0BAA222282EA00604360 /* SecondViewController.swift */; };
+		B7AC0BA9222282EA00604360 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC0BA8222282EA00604360 /* ProfileViewController.swift */; };
+		B7AC0BAB222282EA00604360 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC0BAA222282EA00604360 /* CategoriesViewController.swift */; };
 		B7AC0BAE222282EA00604360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AC0BAC222282EA00604360 /* Main.storyboard */; };
 		B7AC0BB0222282EB00604360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7AC0BAF222282EB00604360 /* Assets.xcassets */; };
 		B7AC0BB3222282EB00604360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AC0BB1222282EB00604360 /* LaunchScreen.storyboard */; };
+		B7AC0BBB2222979C00604360 /* ReceiptsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC0BBA2222979C00604360 /* ReceiptsViewController.swift */; };
+		B7AC0BBD222297A800604360 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC0BBC222297A800604360 /* PlacesViewController.swift */; };
+		B7AC0BC12222B0E700604360 /* CameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC0BC02222B0E700604360 /* CameraButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +25,15 @@
 		776086DE75D411772489E2E8 /* Pods-CashMove.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashMove.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CashMove/Pods-CashMove.debug.xcconfig"; sourceTree = "<group>"; };
 		B7AC0BA3222282EA00604360 /* CashMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AC0BA6222282EA00604360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B7AC0BA8222282EA00604360 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		B7AC0BAA222282EA00604360 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B7AC0BA8222282EA00604360 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B7AC0BAA222282EA00604360 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		B7AC0BAD222282EA00604360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7AC0BAF222282EB00604360 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7AC0BB2222282EB00604360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7AC0BB4222282EB00604360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7AC0BBA2222979C00604360 /* ReceiptsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsViewController.swift; sourceTree = "<group>"; };
+		B7AC0BBC222297A800604360 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		B7AC0BC02222B0E700604360 /* CameraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,15 +78,42 @@
 		B7AC0BA5222282EA00604360 /* CashMove */ = {
 			isa = PBXGroup;
 			children = (
+				B7AC0BBE22229BD800604360 /* Controllers */,
+				B7AC0BBF22229BE900604360 /* Views */,
+				B7AC0BC22222B0F200604360 /* Utilities */,
 				B7AC0BA6222282EA00604360 /* AppDelegate.swift */,
-				B7AC0BA8222282EA00604360 /* FirstViewController.swift */,
-				B7AC0BAA222282EA00604360 /* SecondViewController.swift */,
-				B7AC0BAC222282EA00604360 /* Main.storyboard */,
-				B7AC0BB1222282EB00604360 /* LaunchScreen.storyboard */,
 				B7AC0BAF222282EB00604360 /* Assets.xcassets */,
 				B7AC0BB4222282EB00604360 /* Info.plist */,
 			);
 			path = CashMove;
+			sourceTree = "<group>";
+		};
+		B7AC0BBE22229BD800604360 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7AC0BA8222282EA00604360 /* ProfileViewController.swift */,
+				B7AC0BAA222282EA00604360 /* CategoriesViewController.swift */,
+				B7AC0BBA2222979C00604360 /* ReceiptsViewController.swift */,
+				B7AC0BBC222297A800604360 /* PlacesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B7AC0BBF22229BE900604360 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7AC0BAC222282EA00604360 /* Main.storyboard */,
+				B7AC0BB1222282EB00604360 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B7AC0BC22222B0F200604360 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B7AC0BC02222B0E700604360 /* CameraButton.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		FAA2E20C3218BDA2D4EDCDEF /* Frameworks */ = {
@@ -211,9 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7AC0BAB222282EA00604360 /* SecondViewController.swift in Sources */,
+				B7AC0BAB222282EA00604360 /* CategoriesViewController.swift in Sources */,
 				B7AC0BA7222282EA00604360 /* AppDelegate.swift in Sources */,
-				B7AC0BA9222282EA00604360 /* FirstViewController.swift in Sources */,
+				B7AC0BBD222297A800604360 /* PlacesViewController.swift in Sources */,
+				B7AC0BBB2222979C00604360 /* ReceiptsViewController.swift in Sources */,
+				B7AC0BC12222B0E700604360 /* CameraButton.swift in Sources */,
+				B7AC0BA9222282EA00604360 /* ProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +397,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WLS2Y9L8B6;
 				INFOPLIST_FILE = CashMove/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,7 +407,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cashmove.CashMove;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -379,7 +417,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WLS2Y9L8B6;
 				INFOPLIST_FILE = CashMove/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,7 +427,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cashmove.CashMove;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

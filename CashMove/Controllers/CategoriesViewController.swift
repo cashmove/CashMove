@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  CategoriesViewController.swift
 //  CashMove
 //
 //  Created by Pavel Koval on 2/24/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class CategoriesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

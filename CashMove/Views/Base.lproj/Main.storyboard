@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" userLabel="Profile" customClass="ProfileViewController" customModule="CashMove" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_with_logo" translatesAutoresizingMaskIntoConstraints="NO" id="uIk-nt-qdr" userLabel="HeaderImage">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="294"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROFILE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IK-gj-O0S" userLabel="ProfileLabel">
+                                <rect key="frame" x="157" y="30" width="61" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNR-eF-haq" userLabel="SettingsButton">
+                                <rect key="frame" x="335" y="23.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bdj-av-eVr"/>
+                                    <constraint firstAttribute="width" constant="30" id="gVg-xm-Ft9"/>
+                                </constraints>
+                                <state key="normal" image="icon_settings"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wst-8k-jhx" userLabel="CameraView">
+                                <rect key="frame" x="14" y="294" width="347" height="300"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMW-3K-0hq" userLabel="CameraButton" customClass="CameraButton" customModule="CashMove" customModuleProvider="target">
+                                <rect key="frame" x="235" y="524" width="140" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="KIN-Nj-j8z"/>
+                                    <constraint firstAttribute="height" constant="84" id="fpU-k1-Wce"/>
+                                </constraints>
+                                <state key="normal" image="button_camera_active"/>
+                                <connections>
+                                    <action selector="cameraButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="yfW-GQ-Bnb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RIK-2a-FdR" firstAttribute="trailing" secondItem="TMW-3K-0hq" secondAttribute="trailing" id="0lw-QE-s2J"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uIk-nt-qdr" secondAttribute="bottom" constant="340" id="ANm-dX-v1c"/>
+                            <constraint firstItem="RIK-2a-FdR" firstAttribute="bottom" secondItem="TMW-3K-0hq" secondAttribute="bottom" constant="10" id="Ddu-JC-qpL"/>
+                            <constraint firstItem="RIK-2a-FdR" firstAttribute="bottom" secondItem="wst-8k-jhx" secondAttribute="bottom" constant="24" id="Ke5-wQ-q3V"/>
+                            <constraint firstItem="wst-8k-jhx" firstAttribute="top" secondItem="uIk-nt-qdr" secondAttribute="bottom" id="Khh-fW-EwT"/>
+                            <constraint firstItem="9IK-gj-O0S" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Myi-fD-UhM"/>
+                            <constraint firstItem="RIK-2a-FdR" firstAttribute="trailing" secondItem="wst-8k-jhx" secondAttribute="trailing" constant="14" id="PtL-XO-nUx"/>
+                            <constraint firstItem="wst-8k-jhx" firstAttribute="leading" secondItem="RIK-2a-FdR" secondAttribute="leading" constant="14" id="XlV-g7-BOp"/>
+                            <constraint firstItem="9IK-gj-O0S" firstAttribute="top" secondItem="RIK-2a-FdR" secondAttribute="top" constant="10" id="XxR-Pu-kQw"/>
+                            <constraint firstItem="HNR-eF-haq" firstAttribute="centerY" secondItem="9IK-gj-O0S" secondAttribute="centerY" id="bdE-7F-ZbT"/>
+                            <constraint firstItem="RIK-2a-FdR" firstAttribute="trailing" secondItem="uIk-nt-qdr" secondAttribute="trailing" id="efZ-Dr-erK"/>
+                            <constraint firstItem="uIk-nt-qdr" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="fZW-mK-bIT"/>
+                            <constraint firstItem="uIk-nt-qdr" firstAttribute="leading" secondItem="RIK-2a-FdR" secondAttribute="leading" id="l3P-hX-axt"/>
+                            <constraint firstItem="RIK-2a-FdR" firstAttribute="trailing" secondItem="HNR-eF-haq" secondAttribute="trailing" constant="10" id="m8M-De-niN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RIK-2a-FdR"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="tabbar_icon_profile" id="acW-dT-cKf" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="hr2-gz-JqK" id="u53-s7-lcz"/>
+                        </connections>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="previewView" destination="wst-8k-jhx" id="gGP-6r-6oa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <customObject id="hr2-gz-JqK" customClass="RAMFumeAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="8.4507042253521121"/>
+        </scene>
+        <!--Categories-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" userLabel="Categories" customClass="CategoriesViewController" customModule="CashMove" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="XaG-Sm-Xez">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATEGORIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uW7-T7-q4K" userLabel="CategoriesLabel">
+                                <rect key="frame" x="141.5" y="30" width="92.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdf-Vi-mcl" userLabel="CameraButton" customClass="CameraButton" customModule="CashMove" customModuleProvider="target">
+                                <rect key="frame" x="235" y="524" width="140" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="EAi-cz-WsB"/>
+                                    <constraint firstAttribute="width" constant="140" id="WaI-Jr-ORs"/>
+                                </constraints>
+                                <state key="normal" image="button_camera_active"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uW7-T7-q4K" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="10" id="49o-id-XgF"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="cdf-Vi-mcl" secondAttribute="bottom" constant="10" id="8W2-U5-aqd"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="cdf-Vi-mcl" secondAttribute="trailing" id="UHE-hd-8xz"/>
+                            <constraint firstItem="XaG-Sm-Xez" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="bFa-gg-yoL"/>
+                            <constraint firstItem="XaG-Sm-Xez" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="d7z-gA-eLY"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XaG-Sm-Xez" secondAttribute="bottom" constant="320" id="dr9-88-SBM"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="XaG-Sm-Xez" secondAttribute="trailing" id="gGz-uf-QiM"/>
+                            <constraint firstItem="uW7-T7-q4K" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="l8m-RV-pdN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Categories" image="tabbar_icon_categories" id="cPa-gy-q4n" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="EYw-de-xQj" id="fyz-Xf-461"/>
+                        </connections>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                <customObject id="EYw-de-xQj" customClass="RAMFumeAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="9"/>
+        </scene>
+        <!--Receipts-->
+        <scene sceneID="anV-6K-B8e">
+            <objects>
+                <viewController id="deM-N6-aGl" customClass="ReceiptsViewController" customModule="CashMove" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MAT-ov-6oq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="6Jd-sh-fzP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECEIPTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxM-c7-Shl" userLabel="ReceiptsLabel">
+                                <rect key="frame" x="152" y="30" width="71" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="us0-BP-ZOm" userLabel="CameraButton" customClass="CameraButton" customModule="CashMove" customModuleProvider="target">
+                                <rect key="frame" x="235" y="524" width="140" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="Y9r-v3-8ZR"/>
+                                    <constraint firstAttribute="width" constant="140" id="wIU-3g-pjZ"/>
+                                </constraints>
+                                <state key="normal" image="button_camera_active"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Jd-sh-fzP" firstAttribute="leading" secondItem="88M-4b-doe" secondAttribute="leading" id="Cc0-ML-peO"/>
+                            <constraint firstItem="us0-BP-ZOm" firstAttribute="trailing" secondItem="88M-4b-doe" secondAttribute="trailing" id="CgJ-fQ-bld"/>
+                            <constraint firstItem="88M-4b-doe" firstAttribute="bottom" secondItem="us0-BP-ZOm" secondAttribute="bottom" constant="10" id="Eq6-8R-Iu0"/>
+                            <constraint firstItem="VxM-c7-Shl" firstAttribute="top" secondItem="88M-4b-doe" secondAttribute="top" constant="10" id="GQd-p2-ikE"/>
+                            <constraint firstItem="6Jd-sh-fzP" firstAttribute="top" secondItem="MAT-ov-6oq" secondAttribute="top" id="gbg-uv-MPV"/>
+                            <constraint firstItem="6Jd-sh-fzP" firstAttribute="trailing" secondItem="88M-4b-doe" secondAttribute="trailing" id="geh-nM-oRi"/>
+                            <constraint firstItem="VxM-c7-Shl" firstAttribute="centerX" secondItem="MAT-ov-6oq" secondAttribute="centerX" id="hyt-2c-30T"/>
+                            <constraint firstItem="88M-4b-doe" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6Jd-sh-fzP" secondAttribute="bottom" constant="320" id="m0e-2v-QxT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="88M-4b-doe"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Receipts" image="tabbar_icon_receipts" id="AeZ-xh-Oyn" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="xBd-aN-gLQ" id="C3o-60-vlS"/>
+                        </connections>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k1J-2L-NbC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="xBd-aN-gLQ" customClass="RAMFumeAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="1782" y="8"/>
+        </scene>
+        <!--Places-->
+        <scene sceneID="8Mi-nr-8ai">
+            <objects>
+                <viewController id="2KT-Ky-5cw" customClass="PlacesViewController" customModule="CashMove" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JZi-IX-2NL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="Uxj-N1-Oux">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLV-Xw-zIA" userLabel="CameraButton" customClass="CameraButton" customModule="CashMove" customModuleProvider="target">
+                                <rect key="frame" x="235" y="524" width="140" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="Cir-kI-6Zt"/>
+                                    <constraint firstAttribute="width" constant="140" id="Om7-vR-kXD"/>
+                                </constraints>
+                                <state key="normal" image="button_camera_active"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLACES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeS-PM-BCB" userLabel="PlacesLabel">
+                                <rect key="frame" x="159" y="30" width="57" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uxj-N1-Oux" firstAttribute="leading" secondItem="ypz-hy-HSr" secondAttribute="leading" id="4Kr-P5-URF"/>
+                            <constraint firstItem="TeS-PM-BCB" firstAttribute="centerX" secondItem="JZi-IX-2NL" secondAttribute="centerX" id="Ayi-Lo-RqS"/>
+                            <constraint firstItem="Uxj-N1-Oux" firstAttribute="trailing" secondItem="ypz-hy-HSr" secondAttribute="trailing" id="Ip2-4I-QE7"/>
+                            <constraint firstItem="TeS-PM-BCB" firstAttribute="top" secondItem="ypz-hy-HSr" secondAttribute="top" constant="10" id="J09-my-2hn"/>
+                            <constraint firstItem="fLV-Xw-zIA" firstAttribute="trailing" secondItem="ypz-hy-HSr" secondAttribute="trailing" id="Uii-kB-W29"/>
+                            <constraint firstItem="ypz-hy-HSr" firstAttribute="bottom" secondItem="fLV-Xw-zIA" secondAttribute="bottom" constant="10" id="Z5V-5k-Z2J"/>
+                            <constraint firstItem="Uxj-N1-Oux" firstAttribute="top" secondItem="JZi-IX-2NL" secondAttribute="top" id="kHL-IN-47h"/>
+                            <constraint firstItem="ypz-hy-HSr" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Uxj-N1-Oux" secondAttribute="bottom" constant="320" id="rmd-l7-uxC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ypz-hy-HSr"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Places" image="tabbar_icon_places" id="v5g-JK-pvE" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="jEj-rq-faT" id="XZr-18-q7d"/>
+                        </connections>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dBf-wC-E1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="jEj-rq-faT" customClass="RAMFumeAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="2650" y="5"/>
+        </scene>
+        <!--Animated Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="deM-N6-aGl" kind="relationship" relationship="viewControllers" id="sS1-jW-ev4"/>
+                        <segue destination="2KT-Ky-5cw" kind="relationship" relationship="viewControllers" id="AnK-cn-efJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1346" y="-895"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_camera_active" width="140" height="83"/>
+        <image name="header" width="374.5" height="185"/>
+        <image name="header_with_logo" width="375" height="294.5"/>
+        <image name="icon_settings" width="29.5" height="30"/>
+        <image name="tabbar_icon_categories" width="25" height="25"/>
+        <image name="tabbar_icon_places" width="25" height="25"/>
+        <image name="tabbar_icon_profile" width="25" height="25"/>
+        <image name="tabbar_icon_receipts" width="25" height="25"/>
+    </resources>
+</document>
